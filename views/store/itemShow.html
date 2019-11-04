@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Font Awesome -->
+  <!-- <script src="https://kit.fontawesome.com/dae5f81f6a.js" crossorigin="anonymous"></script> -->
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="/styles/main.css">
+  <!-- Item JS -->
+  <script defer src="/scripts/store/item.js"></script>
+  <!-- Main JS -->
+  <script defer src="/scripts/main.js"></script>
+  <title>Express Cart | Store</title>
+</head>
+<body>
+  <nav>
+    <a class="nav-link" href="/">Home</a>
+    <a class="nav-link" href="/about">About</a>
+    <a class="nav-link" href="/store">Store</a>
+    <a class="nav-link" href="/cart">Cart</a>
+    <a class="nav-link login-required" href="/profile">Profile</a>
+    <a class="nav-link login-required" href="/login">Login</a>
+    <a id="logout" class="nav-link login-required" href="/logout">Logout</a>
+  </nav>
+  
+  <main>
+    <section class="full-width-content">
+      <h1>Item Detail</h1>
+      <section id="item"></section>
+    </section>
+    <aside>
+      <h4>Shopping Cart</h4>
+      <ul>
+        <li>Item One $5.45</li>
+        <li>Item Two $19.99</li>
+        <li>Item Three $12.15</li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    &copy; 2019 Acme Inc.
+  </footer>
+</body>
+</html>

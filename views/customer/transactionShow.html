@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Font Awesome -->
+  <!-- <script src="https://kit.fontawesome.com/dae5f81f6a.js" crossorigin="anonymous"></script> -->
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="/styles/main.css">
+  <!-- Order Detail JS -->
+  <script defer src="/scripts/customer/transactionShow.js"></script>
+  <!-- Main JS -->
+  <script defer src="/scripts/main.js"></script>
+  <title>Express Cart | Order Detail</title>
+</head>
+<body>
+  <nav>
+    <a class="nav-link" href="/">Home</a>
+    <a class="nav-link" href="/about">About</a>
+    <a class="nav-link" href="/store">Store</a>
+    <a class="nav-link" href="/cart">Cart</a>
+    <a class="nav-link login-hidden" href="/signup">Sign Up</a>
+    <a class="nav-link login-required" href="/profile">Profile</a>
+    <a class="nav-link login-required" href="/login">Login</a>
+    <a id="logout" class="nav-link login-required" href="/logout">Logout</a>
+  </nav>
+  
+  <main>
+    <section class="full-width-content">
+      <h1>Order #<span id="orderNumber"></span> Details</h1>
+      <div id="transactionDetails"></div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2019 Acme Inc.
+  </footer>
+</body>
+</html>

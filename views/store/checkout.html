@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Font Awesome -->
+  <!-- <script src="https://kit.fontawesome.com/dae5f81f6a.js" crossorigin="anonymous"></script> -->
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="/styles/main.css">
+  <!-- Checkout JS -->
+  <script defer src="/scripts/store/checkout.js"></script>
+  <!-- Main JS -->
+  <script defer src="/scripts/main.js"></script>
+  <title>Express Cart | Checkout</title>
+</head>
+<body>
+  <nav>
+    <a class="nav-link" href="/">Home</a>
+    <a class="nav-link" href="/about">About</a>
+    <a class="nav-link" href="/store">Store</a>
+    <a class="nav-link" href="/cart">Cart</a>
+    <a class="nav-link login-hidden" href="/signup">Sign Up</a>
+    <a class="nav-link login-required" href="/profile">Profile</a>
+    <a class="nav-link login-required" href="/login">Login</a>
+    <a id="logout" class="nav-link login-required" href="/logout">Logout</a>
+  </nav>
+  
+  <main>
+    <section class="full-width-content checkout-page">
+      <div class="checkout-form-container">
+        <h1>Checkout</h1>
+        <!-- Customer Information -->
+        <div class="customer-information">
+          <h4>Customer Infromation</h4>
+          <form id="customerInfo">
+            <div class="input-group">
+              <div class="form-control">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" />
+              </div>
+              <div class="form-control">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" />
+              </div>
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" />
+            </div>
+            <div class="form-control">
+              <label for="street">Street Address</label>
+              <input type="text" id="street" name="street" />
+            </div>
+            <div class="address-group">
+              <div class="form-control">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" />
+              </div>
+              <div class="form-control">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" />
+              </div>
+              <div class="form-control">
+                <label for="zipcode">Zipcode</label>
+                <input type="text" id="zipcode" name="zipcode" />
+              </div>
+            </div>
+            <div class="form-control create-account-container">
+              <label for="createAccount">Create a new account?</label>
+              <input type="checkbox" name="createAccount" id="createAccount" />
+              <div id="passwordContainer"></div>
+            </div>
+            <button type="submit" class="order-button">Next Step</button>
+          </form>
+        </div>
+        <!-- Payment Information -->
+        <div class="payment-information hide">
+          <h4>Payment Information</h4>
+          <form id="paymentInfo">
+            <div class="form-control">
+              <label for="cardNumber">Credit Card Number</label>
+              <input type="text" id="cardNumber" name="cardNumber" />
+            </div>
+            <div class="credit-card-group">
+              <div class="form-control">
+                <label for="name">Name on Card</label>
+                <input type="text" id="name" name="name" />
+              </div>
+              <div class="form-control">
+                <label for="expiration">Expiration</label>
+                <input type="text" id="expiration" name="expiration" />
+              </div>
+              <div class="form-control">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" />
+              </div>
+            </div>
+            <button type="submit" class="order-button place-order">Place Order</button>
+          </form>
+        </div>
+      </div>
+      <!-- Cart Items -->
+      <div id="items"></div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2019 Acme Inc.
+  </footer>
+</body>
+</html>

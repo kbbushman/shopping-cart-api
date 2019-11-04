@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Font Awesome -->
+  <!-- <script src="https://kit.fontawesome.com/dae5f81f6a.js" crossorigin="anonymous"></script> -->
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="/styles/main.css">
+  <!-- Admin CSS -->
+  <link rel="stylesheet" href="/styles/admin.css">
+  <!-- Admin Store Item Edit JS -->
+  <script defer src="/scripts/admin/adminStoreItemEdit.js"></script>
+  <!-- Main JS -->
+  <script defer src="/scripts/admin/adminMain.js"></script>
+  <title>Express Cart Admin | Edit Store Item</title>
+</head>
+<body>
+  <nav>
+    <a class="nav-link" href="/">Home</a>
+    <a class="nav-link" href="/about">About</a>
+    <a class="nav-link" href="/store">Store</a>
+    <a class="nav-link" href="/cart">Cart</a>
+    <a id="adminLogout" class="nav-link login-required" href="/logout">Logout</a>
+  </nav>
+  <div class="container">
+    <aside>
+      <a class="button" href="/admin/customers">Customers</a>
+      <a class="button" href="/admin/transactions">Transactions</a>
+      <a class="button" href="/admin/items">Store Items</a>
+    </aside>
+    <main>
+      <section class="full-width-content">
+        <h1>Admin Dashboard - Edit Store Item</h1>
+        <h4>Edit Item</h4>
+        <form>
+          <div class="input-group">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" />
+            </div>
+            <div class="form-control">
+              <label for="brand">Brand</label>
+              <input type="text" id="brand" name="brand" />
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="form-control">
+              <label for="quantity">Quantity</label>
+              <input type="number" id="quantity" name="quantity" step="1" />
+            </div>
+            <div class="form-control">
+              <label for="price">Price</label>
+              <input type="number" id="price" name="price" step=".01" />
+            </div>
+          </div>
+          <div class="form-control">
+            <label for="category">Category</label>
+            <input type="text" id="category" name="category" />
+          </div>
+          <div class="form-control">
+            <label for="imageSrc">Image Source</label>
+            <input type="text" id="imageSrc" name="imageSrc" />
+          </div>
+          <div class="button-group">
+            <input class="button" type="submit" value="Update Item" />
+            <button type="button" class="close-modal continue-shopping">Cancel</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    &copy; 2019 Acme Inc.
+  </footer>
+</body>
+</html>

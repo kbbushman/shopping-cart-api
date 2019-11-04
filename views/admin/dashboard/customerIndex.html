@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Font Awesome -->
+  <!-- <script src="https://kit.fontawesome.com/dae5f81f6a.js" crossorigin="anonymous"></script> -->
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="/styles/main.css">
+  <!-- Admin CSS -->
+  <link rel="stylesheet" href="/styles/admin.css">
+  <!-- Admin Customers JS -->
+  <script defer src="/scripts/admin/adminCustomers.js"></script>
+  <!-- Main JS -->
+  <script defer src="/scripts/admin/adminMain.js"></script>
+  <title>Express Cart Admin | Customers</title>
+</head>
+<body>
+  <nav>
+    <a class="nav-link" href="/">Home</a>
+    <a class="nav-link" href="/about">About</a>
+    <a class="nav-link" href="/store">Store</a>
+    <a class="nav-link" href="/cart">Cart</a>
+    <a id="adminLogout" class="nav-link login-required" href="/logout">Logout</a>
+  </nav>
+  <div class="container">
+    <aside>
+      <a class="button" href="/admin/customers">Customers</a>
+      <a class="button" href="/admin/transactions">Transactions</a>
+      <a class="button" href="/admin/items">Store Items</a>
+    </aside>
+    <main>
+      <section class="full-width-content">
+        <h1>Admin Dashboard - Customers</h1>
+        <table>
+          <thead>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>ID</th>
+            <th></th>
+          </thead>
+          <tbody id="customers"></tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    &copy; 2019 Acme Inc.
+  </footer>
+</body>
+</html>
